@@ -114,8 +114,16 @@
             settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController" />
 
         <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="volume_rocker_wake"
+            android:title="@string/volume_rocker_wake_title"
+            android:summary="@string/volume_rocker_wake_summary"
+            android:defaultValue="false"
+            android:disableDependentsState="true" />
+
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
             android:key="volume_button_music_control"
             android:title="@string/volume_rocker_music_controls_title"
+            android:dependency="volume_rocker_wake"
             android:summary="@string/volume_rocker_music_controls_summary"
             android:defaultValue="false" />
 
