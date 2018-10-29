@@ -406,4 +406,8 @@
     <string name="dialog_delete_message">Ausgewähltes Element entfernen?</string>
     <string name="dialog_delete_title">Entfernen</string>
 
+    <!-- Torch Power button gestures -->
+    <string name="power_button_torch_title">Zum Aktivieren der Taschenlampe gedrückt halten</string>
+    <string name="power_button_torch_summary">Gedrückt halten, um bei ausgeschaltetem Bildschirm die Taschenlampe einzuschalten</string>
+
 </resources>
