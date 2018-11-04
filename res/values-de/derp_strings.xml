@@ -444,4 +444,8 @@
     <!-- Floating rotation button -->
     <string name="enable_floating_rotation_button_title">Eine schwebende Schaltfläche zum Drehen einblenden</string>
 
+    <!-- Volume keys control music playback -->
+    <string name="volume_rocker_music_controls_title">Wiedergabesteuerung</string>
+    <string name="volume_rocker_music_controls_summary">Wenn der Bildschirm ausgeschaltet ist, werden durch langes Drücken der Lautstärketasten Musiktitel übersprungen</string>
+
 </resources>
