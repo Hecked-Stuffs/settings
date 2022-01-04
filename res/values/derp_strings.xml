@@ -157,4 +157,9 @@
     <string name="high_touch_polling_rate_title">High touch polling rate</string>
     <string name="high_touch_polling_rate_summary">Increase touchscreen polling rate</string>
 
+    <!-- Gestures & Keys -->
+    <string name="derp_settings_gestures_keys_title">Gestures &amp; Motions</string>
+    <string name="gesture_gestures_category_title">Gestures</string>
+    <string name="derp_settings_keys_category_title">Keys</string>
+
 </resources>
