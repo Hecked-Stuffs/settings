@@ -419,4 +419,9 @@
     <string name="ambient_notification_light_color_automatic_title">Notification color</string>
     <string name="pulse_ambient_light_color">When pulsing, use</string>
 
+    <!-- Gesture navbar radius -->
+    <string name="gesture_navbar_radius_title">Pillenradius</string>
+    <string name="thin_label">Schmal</string>
+    <string name="thick_label">Breit</string>
+
 </resources>
