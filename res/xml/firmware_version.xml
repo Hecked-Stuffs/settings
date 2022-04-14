@@ -18,51 +18,58 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/firmware_version"
+    android:title="@string/about_device_info"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- arcanaOS info -->
+    <!-- Project Arcana info -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="arcana_info"
         android:layout="@layout/arcana_info"
-        android:clickable="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.DerpFestLogoPreferenceController"/>
+        android:selectable="false" />
         
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
-        android:title="@string/platform_version"
+        android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_android_version"
+        android:icon="@drawable/ic_dot_apps"
         settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- DerpFest version -->
+    <!-- Battery -->
     <Preference
-        android:key="derp_version"
-        android:title="@string/derp_version"
-        android:summary="@string/summary_placeholder"
+        android:key="battery"
+        settings:layout="@layout/arc_card_about"
+        android:title="@string/battery"
+        android:icon="@drawable/batteryab"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.DerpFestVersionPreferenceController"/>
-
-    <!-- DerpFest maintainer -->
+        android:selectable="true"/>
+        
+    <!-- Chipset -->
     <Preference
-        android:key="maintainer"
-        android:title="@string/maintainer"
-        android:summary="@string/maintainer_name"
-        settings:enableCopying="true" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="@string/maintainer_telegram"/>
-    </Preference>
+        android:key="chipset"
+        settings:layout="@layout/arc_card_about"
+        android:title="@string/chipset"
+        android:icon="@drawable/chipsetab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+        
+    <!-- Display -->
+    <Preference
+        android:key="display"
+        settings:layout="@layout/arc_card_about"
+        android:title="@string/display"
+        android:icon="@drawable/displayab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
 
     <!-- Security patch -->
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
-        android:icon="@drawable/ic_device_status"
+        android:icon="@drawable/ic_dot_security"
         settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
@@ -72,40 +79,18 @@
         android:key="kernel_version"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_legal"
+        android:icon="@drawable/ic_settings_omnigears"
         settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- SELinux -->
+    <!-- Storage -->
     <Preference
-        android:key="os_build_date"
-        android:title="@string/rice_build_date_title"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SelinuxStatusPreferenceController"/>
-
-    <!-- Baseband -->
-    <Preference
-        android:key="base_band"
-        android:title="@string/baseband_version"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_model_hardware"
-        android:selectable="false"
+        android:key="storage"
         settings:layout="@layout/arc_card_about"
+        android:title="@string/storage"
+        android:icon="@drawable/storageab"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
-
-    <!-- Build -->
-    <!-- <Preference
-        android:key="os_build_number"
-        android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_build_number"
-        android:selectable="false"
-        settings:layout="@layout/arc_card_about"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/> -->
+        android:selectable="true"/>
 
 </PreferenceScreen>
