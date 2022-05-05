@@ -4520,7 +4520,7 @@
         <!-- DerpSpace -->
         <activity android:name=".Settings$DerpSpaceSettingsActivity"
                   android:label="@string/derpspace_title"
-                  android:icon="@drawable/ic_homepage_derpspace"
+                  android:icon="@drawable/ic_homepage_fireworks"
                   android:exported="true"
                   android:parentActivityName="com.android.settings">
             <intent-filter>
@@ -4529,10 +4529,10 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="org.derpfest.derpspace.DerpSpace"/>
-            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
-                android:value="@string/menu_key_derp"/>
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                        android:value="true" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/build_tweaks_summary_title"/>
         </activity>
     </application>
 </manifest>
