@@ -71,19 +71,11 @@ public class arcanaInfoPreferenceController extends AbstractPreferenceController
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         final LayoutPreference arcanaInfoPreference = screen.findPreference(KEY_ARCANA_INFO);
-        final TextView version = (TextView) arcanaInfoPreference.findViewById(R.id.version_message);
-        final TextView device = (TextView) arcanaInfoPreference.findViewById(R.id.device_message);
-        final TextView releaseType = (TextView) arcanaInfoPreference.findViewById(R.id.release_type_message);
-        final TextView maintainer = (TextView) arcanaInfoPreference.findViewById(R.id.maintainer_message);
         final String arcanaVersion = getarcanaVersion();
         final String arcanaDevice = getDeviceName();
         final String arcanaReleaseType = getarcanaReleaseType();
         final String arcanaMaintainer = SystemProperties.get(PROP_ARCANA_MAINTAINER,
                 this.mContext.getString(R.string.device_info_default));
-        version.setText(arcanaVersion);
-        device.setText(arcanaDevice);
-        releaseType.setText(arcanaReleaseType);
-        maintainer.setText(arcanaMaintainer);
     }
 
     @Override

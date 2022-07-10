@@ -32,65 +32,75 @@
         android:key="os_firmware_version"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_dot_apps"
         settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Battery -->
+    <!-- DerpFest version -->
     <Preference
-        android:key="battery"
+        android:key="derp_version"
+        android:title="@string/derp_version"
+        android:summary="@string/summary_placeholder"
         settings:layout="@layout/arc_card_about"
-        android:title="@string/battery"
-        android:icon="@drawable/batteryab"
         settings:enableCopying="true"
-        android:selectable="true"/>
-        
-    <!-- Chipset -->
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.DerpFestVersionPreferenceController"/>
+
+    <!-- Changelog -->
     <Preference
-        android:key="chipset"
-        settings:layout="@layout/arc_card_about"
-        android:title="@string/chipset"
-        android:icon="@drawable/chipsetab"
-        settings:enableCopying="true"
-        android:selectable="true"/>
-        
-    <!-- Display -->
+        android:key="changelog"
+        android:title="@string/changelog_title"
+        android:summary="@string/changelog_summary"
+        settings:layout="@layout/arc_card_about">
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="com.android.settings"
+             android:targetClass="com.android.settings.derp.ChangelogActivity"/>
+    </Preference>
+
+    <!-- DerpFest maintainer -->
     <Preference
-        android:key="display"
+        android:key="maintainer"
+        android:title="@string/maintainer"
+        android:summary="@string/maintainer_name"
         settings:layout="@layout/arc_card_about"
-        android:title="@string/display"
-        android:icon="@drawable/displayab"
-        settings:enableCopying="true"
-        android:selectable="true"/>
+        settings:enableCopying="true" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="@string/maintainer_telegram"/>
+    </Preference>
 
     <!-- Security patch -->
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
-        android:icon="@drawable/ic_dot_security"
         settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
+
+    <!-- Baseband -->
+    <Preference
+        android:key="base_band"
+        android:title="@string/baseband_version"
+        android:summary="@string/summary_placeholder"
+        settings:layout="@layout/arc_card_about"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
     <!-- Kernel -->
     <Preference
         android:key="kernel_version"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_settings_omnigears"
         settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- Storage -->
+    <!-- SELinux -->
     <Preference
-        android:key="storage"
+        android:key="selinux_status"
+        android:title="@string/selinux_status"
+        android:summary="@string/summary_placeholder"
         settings:layout="@layout/arc_card_about"
-        android:title="@string/storage"
-        android:icon="@drawable/storageab"
         settings:enableCopying="true"
-        android:selectable="true"/>
-
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SelinuxStatusPreferenceController"/>
 </PreferenceScreen>
