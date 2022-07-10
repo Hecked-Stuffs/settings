@@ -1,22 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:background="@drawable/rdnt_cw_about_rpl"
+    android:background="@drawable/arcana_preference_about"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="@dimen/rdnt_cardview_padding"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:gravity="center_vertical"
         android:layout_width="fill_parent"
-        android:layout_marginVertical="@dimen/rdnt_pref_vert"
+        android:layout_marginVertical="6dp"
         android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="@dimen/rdnt_cardview_margin_list"
+            android:layout_marginBottom="@dimen/rdnt_cardview_margin_list"
+            android:layout_weight="1.0"
+            android:layout_marginEnd="10dp">
+            <TextView
+                android:ellipsize="marquee"
+                android:id="@android:id/title"
+                android:fadingEdge="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@style/rdnt_cardview_text_primary" />
+
+            <TextView
+                android:id="@android:id/summary"
+                style="@style/rdnt_cardview_text_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@android:id/title"
+                android:layout_alignStart="@android:id/title"
+                android:layout_alignLeft="@android:id/title"
+                android:layout_marginTop="2.0dip"
+                android:maxLines="4"/>
+        </RelativeLayout>
 
         <FrameLayout
             android:id="@id/icon_frame"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" 
+            android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
             android:layout_marginEnd="18dp">
 
@@ -30,40 +63,13 @@
 
         </FrameLayout>
 
-        <RelativeLayout
-            android:layout_width="0.0dip"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/rdnt_cardview_margin_list"
-            android:layout_marginBottom="@dimen/rdnt_cardview_margin_list"
-            android:layout_weight="1.0"
-            android:layout_marginEnd="@dimen/rdnt_cardview_padding">
-            <TextView
-                android:ellipsize="marquee"
-                android:id="@android:id/title"
-                android:fadingEdge="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                style="@style/rdnt_cardview_text_primary" />
-
-            <TextView
-                android:id="@android:id/summary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2.0dip"
-                android:maxLines="4"
-                android:layout_below="@android:id/title"
-                android:layout_alignLeft="@android:id/title"
-                android:layout_alignStart="@android:id/title"
-                style="@style/rdnt_cardview_text_secondary" />
-        </RelativeLayout>
         <LinearLayout
             android:gravity="center_vertical"
             android:orientation="vertical"
             android:id="@android:id/widget_frame"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:layout_marginStart="18dp"
-            android:layout_marginEnd="18dp"/>
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="12dp"/>
     </LinearLayout>
 </LinearLayout>
