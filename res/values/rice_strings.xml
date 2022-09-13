@@ -90,5 +90,7 @@
     <string name="build_is_community_summary">Unofficial build by %s</string>
     <string name="build_is_community_summary_oopsie">Psst! please tell the builder that he/she forgot to add RICE build flags!</string>
 
+  <string name="rice_customizations_title">DerpSpace</string>
+
 </resources>
 
