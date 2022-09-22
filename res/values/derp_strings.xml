@@ -392,8 +392,8 @@
     <string name="volume_steps_reset">Reset</string>
 
     <!-- Black theme for dark mode -->
-    <string name="berry_black_theme_title">Pure black</string>
-    <string name="berry_black_theme_summary">Pure black background for dark theme</string>
+    <string name="berry_black_theme_title">Vivid theme</string>
+    <string name="berry_black_theme_summary">Darker\, vibrant and colorful monet shades for dark theme</string>
 
     <!-- Warning message for the sd card setup -->
     <string name="storage_warning_internal">Warning: This option may not work properly or lead to data loss and is therefore not recommended!</string>
