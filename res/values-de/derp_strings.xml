@@ -424,10 +424,6 @@
     <string name="fingerprint_wake_unlock_touch">Hört auf Ereignisse, während der Bildschirm aus ist</string>
     <string name="fingerprint_wake_unlock_press">Hört nur auf Ereignisse, wenn der Bildschirm an ist</string>
 
-    <!-- Preference and settings suggestion title text for screen off UDFPS  (device) [CHAR LIMIT=60]-->
-    <string name="ambient_display_screen_off_udfps_title">Fingerabdrucksensor lange drücken, um das Gerät zu entsperren</string>
-    <string name="ambient_display_screen_off_udfps_summary">Um Ihren Bildschirm aufzuwecken und zu entsperren, lange auf Ihren Fingerabdrucksensor unter dem Bildschirm drücken.</string>
-
     <!-- Changelog -->
     <string name="changelog_title">Änderungshistorie</string>
     <string name="changelog_summary">Seit dem letzten Update</string>
