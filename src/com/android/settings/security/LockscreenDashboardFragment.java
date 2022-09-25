@@ -41,7 +41,6 @@ import com.android.settings.display.AODSchedulePreferenceController;
 import com.android.settings.display.DozeOnChargePreferenceController;
 import com.android.settings.gestures.DoubleTapScreenPreferenceController;
 import com.android.settings.gestures.PickupGesturePreferenceController;
-import com.android.settings.gestures.ScreenOffUdfpsPreferenceController;
 import com.android.settings.notification.LockScreenNotificationPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.security.screenlock.LockScreenPreferenceController;
@@ -117,7 +116,6 @@ public class LockscreenDashboardFragment extends DashboardFragment
         use(PickupGesturePreferenceController.class).setConfig(getConfig(context));
         addPreferenceController(new AmbientDisplayCustomPreferenceController(context));
         use(AODSchedulePreferenceController.class).setConfig(getConfig(context));
-        use(ScreenOffUdfpsPreferenceController.class).setConfig(getConfig(context));
 
         mControlsContentObserver = new ContentObserver(
                 new Handler(Looper.getMainLooper())) {
