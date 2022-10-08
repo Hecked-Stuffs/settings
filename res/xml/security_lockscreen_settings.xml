@@ -129,11 +129,11 @@
             android:summary="@string/doze_summary"
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
-        <Preference
+        <!-- <Preference
             android:key="doze_device_settings"
             android:title="@string/ambient_display_screen_title">
             <intent android:action="org.lineageos.settings.device.DOZE_SETTINGS" />
-        </Preference>
+        </Preference> -->
 
     </PreferenceCategory>
 
